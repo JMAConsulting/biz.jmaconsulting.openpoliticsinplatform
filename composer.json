@@ -84,7 +84,8 @@
         "compile-mode": "all",
         "patches": {
             "drupal/keycloak": {
-                "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch"
+                "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch",
+		"OpenConnect Update": "https://git.drupalcode.org/project/keycloak/-/commit/c4764e155ff204dea80bb75a65cc4f49196a35dc.patch"
             }
         }
     }

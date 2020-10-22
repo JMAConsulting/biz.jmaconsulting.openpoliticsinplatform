@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ec6e4530fb68f4fb7496ee2c9a93758",
+    "content-hash": "b30a39617988b07db723943763c9c4cb",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -2908,7 +2908,8 @@
                     }
                 },
                 "patches_applied": {
-                    "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch"
+                    "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch",
+                    "OpenConnect Update": "https://git.drupalcode.org/project/keycloak/-/commit/c4764e155ff204dea80bb75a65cc4f49196a35dc.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
