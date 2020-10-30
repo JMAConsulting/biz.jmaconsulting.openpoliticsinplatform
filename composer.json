@@ -23,13 +23,13 @@
         "civicrm/civicrm-packages": "~5.30",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
+        "drupal/auth0": "^2.4",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "drupal/keycloak": "1.x-dev"
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8.0"
@@ -81,12 +81,6 @@
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
         "enable-patching": "true",
-        "compile-mode": "all",
-        "patches": {
-            "drupal/keycloak": {
-                "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch",
-		"OpenConnect Update": "https://git.drupalcode.org/project/keycloak/-/commit/c4764e155ff204dea80bb75a65cc4f49196a35dc.patch"
-            }
-        }
+        "compile-mode": "all"
     }
 }

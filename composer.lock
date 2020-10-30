@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b30a39617988b07db723943763c9c4cb",
+    "content-hash": "fbcc860cfd524b5a4362092a5436a619",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -162,6 +162,54 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "auth0/auth0-php",
+            "version": "5.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auth0/auth0-PHP.git",
+                "reference": "1bf6d8568fe729804922afa28dfb4107e9c20225"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auth0/auth0-PHP/zipball/1bf6d8568fe729804922afa28dfb4107e9c20225",
+                "reference": "1bf6d8568fe729804922afa28dfb4107e9c20225",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "firebase/php-jwt": "^5.0",
+                "guzzlehttp/guzzle": "~6.0",
+                "php": "^5.5 || ^7.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "josegonzalez/dotenv": "^2.0",
+                "phpcompatibility/php-compatibility": "^8.1",
+                "phpunit/phpunit": "^4.8 || ^5.7",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Auth0\\SDK\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Auth0",
+                    "email": "support@auth0.com",
+                    "homepage": "http://www.auth0.com/"
+                }
+            ],
+            "description": "Auth0 PHP SDK.",
+            "homepage": "https://github.com/auth0/auth0-PHP",
+            "time": "2019-12-09T22:36:51+00:00"
         },
         {
             "name": "brick/math",
@@ -2342,6 +2390,85 @@
             "time": "2020-08-30T22:54:22+00:00"
         },
         {
+            "name": "drupal/auth0",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auth0.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auth0-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "a8e43f53d13bcf353206f48ddf217b2e042b6099"
+            },
+            "require": {
+                "auth0/auth0-php": "^5.1",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1594398897",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "phpcs": [
+                    "\"../../../vendor/bin/phpcs\" --standard=Drupal src"
+                ],
+                "phpcbf": [
+                    "\"../../../vendor/bin/phpcbf\" --standard=Drupal src"
+                ],
+                "cr": [
+                    "\"../../../vendor/bin/drush\" cr"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "German Lena",
+                    "homepage": "https://www.drupal.org/user/2923205",
+                    "email": "german@auth0.com"
+                },
+                {
+                    "name": "Carlos Mostek",
+                    "homepage": "https://www.drupal.org/user/3524008",
+                    "email": "mostekcm@auth0.com"
+                },
+                {
+                    "name": "Josh Cunningham",
+                    "homepage": "https://www.drupal.org/user/567532",
+                    "email": "josh.cunningham@auth0.com"
+                },
+                {
+                    "name": "mostekcm",
+                    "homepage": "https://www.drupal.org/user/3515433"
+                },
+                {
+                    "name": "rob3000",
+                    "homepage": "https://www.drupal.org/user/2329106"
+                },
+                {
+                    "name": "stevehobbsdev",
+                    "homepage": "https://www.drupal.org/user/3651115"
+                }
+            ],
+            "description": "Single Sign On for Enterprises + Social Login + User/Passwords. For all your Drupal instances. Powered by Auth0.",
+            "homepage": "https://www.drupal.org/project/auth0",
+            "support": {
+                "source": "https://git.drupalcode.org/project/auth0"
+            }
+        },
+        {
             "name": "drupal/console",
             "version": "1.9.5",
             "source": {
@@ -2883,135 +3010,6 @@
             "time": "2020-08-07T22:30:30+00:00"
         },
         {
-            "name": "drupal/keycloak",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/keycloak.git",
-                "reference": "34b4d1fb9aa95062bb9a8d1b960a3c9fd7a5cefc"
-            },
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/openid_connect": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.3+22-dev",
-                    "datestamp": "1523548980",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                },
-                "patches_applied": {
-                    "User role Sync": "https://www.drupal.org/files/issues/2020-04-30/2920952-12.keycloak.User-roles-synchronization.patch",
-                    "OpenConnect Update": "https://git.drupalcode.org/project/keycloak/-/commit/c4764e155ff204dea80bb75a65cc4f49196a35dc.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mario Steinitz",
-                    "homepage": "https://www.drupal.org/u/mario-steinitz",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Enables OpenID Connect Keycloak sign on and user data synchronization.",
-            "homepage": "https://www.drupal.org/project/keycloak",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/keycloak",
-                "issues": "https://www.drupal.org/project/issues/keycloak"
-            },
-            "time": "2018-04-12T15:59:50+00:00"
-        },
-        {
-            "name": "drupal/openid_connect",
-            "version": "1.0.0-rc1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/openid_connect.git",
-                "reference": "8.x-1.0-rc1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openid_connect-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "326e9de7200f74025b5bc061ebed6b5447aa6082"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9",
-                "ext-json": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1599584288",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mario Steinitz",
-                    "homepage": "https://www.drupal.org/user/2536014"
-                },
-                {
-                    "name": "balintk",
-                    "homepage": "https://www.drupal.org/user/613760"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jcnventura",
-                    "homepage": "https://www.drupal.org/user/122464"
-                },
-                {
-                    "name": "pfrilling",
-                    "homepage": "https://www.drupal.org/user/169695"
-                },
-                {
-                    "name": "pjcdawkins",
-                    "homepage": "https://www.drupal.org/user/1025236"
-                },
-                {
-                    "name": "robertDouglass",
-                    "homepage": "https://www.drupal.org/user/5449"
-                },
-                {
-                    "name": "sanduhrs",
-                    "homepage": "https://www.drupal.org/user/28074"
-                }
-            ],
-            "description": "A pluggable client implementation for the OpenID Connect protocol.",
-            "homepage": "https://www.drupal.org/project/openid_connect",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/openid_connect",
-                "issues": "https://www.drupal.org/project/issues/openid_connect"
-            }
-        },
-        {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
@@ -3175,6 +3173,56 @@
             "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
             "homepage": "http://code.google.com/p/phpquery/",
             "time": "2013-03-21T12:39:33+00:00"
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "feb0e820b8436873675fd3aca04f3728eb2185cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/feb0e820b8436873675fd3aca04f3728eb2185cb",
+                "reference": "feb0e820b8436873675fd3aca04f3728eb2185cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "time": "2020-03-25T18:49:23+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -11485,9 +11533,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/keycloak": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
